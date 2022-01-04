@@ -1,0 +1,18 @@
+#ulTasks li.done{
+    color:coral;
+    text-decoration: line-through;
+}
+
+.clock {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    color:crimson;
+    font-size: 60px;
+    font-family: Orbitron;
+    letter-spacing: 7px;
+   
+
+
+}
