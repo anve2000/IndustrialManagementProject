@@ -3,6 +3,15 @@
     text-decoration: line-through;
 }
 
+body{
+    background-image: url("https://wallpaper.dog/large/20440532.png") ;
+}
+
+h1{
+    font: small-caps bold 40px/2 cursive;
+    display: inline;
+}
+
 .clock {
     position: absolute;
     top: 50%;
