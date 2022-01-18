@@ -8,13 +8,9 @@ let btnClear=$('#btnClear')
 
 function addItem()
 {
-    let listItem= $('<li>',{
-        'class': 'list-group-item',
-        text: inpNewTask.val()
-    })
-    listItem.click(()=> {
-        listItem.toggleClass('done')
-    })
+    let listItem= $('<li>',{'class': 'list-group-item',text: inpNewTask.val()})
+    listItem.click(()=> { 
+        listItem.toggleClass('done')})
     ulTasks.append(listItem)
     inpNewTask.val('');
     toggleInputBtn()
@@ -60,6 +56,7 @@ inpNewTask.on('input', toggleInputBtn)
 
 function showTime(){
     var date = new Date();
+    // console.log("hey",date);
     var h = date.getHours(); // 0 - 23
     var m = date.getMinutes(); // 0 - 59
     var s = date.getSeconds(); // 0 - 59
@@ -78,7 +75,7 @@ function showTime(){
     m = (m < 10) ? "0" + m : m;
     s = (s < 10) ? "0" + s : s;
     
-    var time = h + ":" + m + ":" + s + " " + session;
+    var time = `${h}:${m}:${s} ${session}`;
     document.getElementById("MyClockDisplay").innerText = time;
     document.getElementById("MyClockDisplay").textContent = time;
     
@@ -99,4 +96,5 @@ btnReset.click(()=> {
     inpNewTask.val('')
     toggleInputBtn(false)
 })
+
 
