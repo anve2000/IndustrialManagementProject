@@ -1,16 +1,54 @@
 #ulTasks li.done{
-    color:coral;
+    color:#EADEDE;
     text-decoration: line-through;
 }
 
 body{
-    background-image: url("https://wallpaper.dog/large/20440532.png") ;
-    background-color: #84DFFF;
+    /* background-image: url("https://wallpaper.dog/large/20440532.png") ; */
+    /* background-color: #4C3F91; */
+    background-color: #046582;
 }
 
 h1{
+    /* font-size: 1em; */
     font: small-caps bold 40px/2 cursive;
     display: inline;
+    color:#6E7582;
+}
+
+label{
+    color: #F39189;
+}
+
+small{
+    color: white;
+}
+
+#NoteBook{
+    /* padding-left: 50px; */
+    /* padding-bottom: 30px; */
+    padding: 5%;
+    border: 10px;
+    
+}
+
+#inpNewTask{
+    color: #046582 ;
+}
+
+.topHeading{
+    background-color:#F39189 ;
+    width:auto;
+    padding-top: 50px;
+    margin-bottom: 100px;
+    height: 200px;
+    padding: 5%;
+}
+
+#ulTasks{
+    color:#046582;
+    width: 25%;
+    margin-bottom: 100px;
 }
 
 .clock {
@@ -18,11 +56,18 @@ h1{
     top: 50%;
     left: 50%;
     transform: translateX(-50%) translateY(-50%);
-    color:crimson;
-    font-size: 60px;
+    color:#D9534F;
+    font-size: 40px;
     font-family: Orbitron;
     letter-spacing: 7px;
-   
 
+}
 
+.list-group-item{
+    background-color: #889EAF;
+}
+
+#MyClockDisplay{
+    margin-top: 60px;
+    -webkit-text-stroke: 0.5px white;
 }
